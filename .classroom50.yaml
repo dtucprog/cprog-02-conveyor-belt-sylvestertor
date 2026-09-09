@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "cprog"
+assignment: "02-conveyor-belt"
+owner:
+  username: "SylvesterTor"
+  id: 49233256
+  accepted_at: "2026-09-09T13:29:49Z"
+source:
+  owner: "dtucprog"
+  owner_id: 316954301
+  repo: "02-conveyor-belt"
+  branch: "main"
