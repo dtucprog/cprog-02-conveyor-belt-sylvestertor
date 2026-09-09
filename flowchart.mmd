@@ -1,0 +1,14 @@
+flowchart TD
+Start([Start])
+Define[MOTOR_CAPACITY = 12kg]
+Start-->Input1[/How many motors are carrying the packages: motorCount/]
+Input1-->Input2[/How many kg of packages do we expect? totalPackageWeight/]
+Input2-->Define
+Define-->Calc[Calc TotalMotorCap \n Motor*MotorCap]
+Calc-->Cond
+Cond{Is TotalMotorCap > totalPackageWeight}
+Cond-->|Yes|Yes[/Yes! The conveyor belt can carry the packages./]
+Cond-->|No|No[/No. The conveyor belt cannot carry the packages./]
+No-->End
+Yes-->End
+End([End])
